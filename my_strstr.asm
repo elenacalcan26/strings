@@ -5,7 +5,6 @@ section .text
     extern printf
 
 my_strstr:
-    ;; DO NOT MODIFY
     push    ebp
     mov     ebp, esp
     pusha
@@ -15,9 +14,6 @@ my_strstr:
     mov     ebx, [ebp + 16]     ; needle
     mov     ecx, [ebp + 20]     ; haystack_len
     mov     edx, [ebp + 24]     ; needle_len
-    ;; DO NOT MODIFY
-
-    ;; TO DO: Implement my_strstr
 
     mov     dword [edi], ecx    ; salvez valoarea
     add     dword [edi], 1      ; consider la inceput ca nu am gasit subsirul in sir
@@ -58,8 +54,6 @@ CHECK_STR:
 
 RETURN:
 
-    ;; DO NOT MODIFY
     popa
     leave
     ret
-    ;; DO NOT MODIFY
