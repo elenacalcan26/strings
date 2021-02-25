@@ -5,7 +5,6 @@ section .text
     extern printf
 
 bin_to_hex:
-    ;; DO NOT MODIFY
     push    ebp
     mov     ebp, esp
     pusha
@@ -13,9 +12,6 @@ bin_to_hex:
     mov     edx, [ebp + 8]      ; hexa_value
     mov     esi, [ebp + 12]     ; bin_sequence
     mov     ecx, [ebp + 16]     ; length
-    ;; DO NOT MODIFY
-
-    ;; TODO: Implement bin to hex
 
     ; aflu pozitia din edx pe care o sa pun '\n'
     add     ecx, 3
@@ -114,8 +110,6 @@ NEXT:
 
 RETURN:
 
-    ;; DO NOT MODIFY
     popa
     leave
     ret
-    ;; DO NOT MODIFY
